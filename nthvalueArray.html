@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1.I have no idea</h1></h1.I>
+<script>
+function findNthElement(arr, n) {
+        if (n < 1 || n > arr.length) {
+            return null; // or throw an error
+        }
+    
+        var count = 0;
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i] !== undefined) {
+                count++;
+            }
+            if (count === n) {
+                return arr[i];
+            }
+        }
+    
+        return null; // or throw an error if the Nth element is not found
+    }
+    
+    // Example usage:
+    var array = [1, 2, 3, 4, 5];
+    var nthElement = findNthElement(array, 3);
+    console.log(nthElement); // Output: 3
+
+
+
+</script>
+    
+     
+    
+</body>
+</html>

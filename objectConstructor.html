@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Display Function Return Value</h1>
+    <div id="output"></div>
+    <button onClick="displayValue()">Get Value</button>
+
+    <script>
+        function createObject(num1, num2) {
+            const obj = {
+                parameter1: num1,
+                parameter2: num2
+            };
+            
+            return obj;
+        }
+
+        function displayValue() {
+            const outputElement = document.getElementById("output");
+            const result = createObject(4, 5);
+            outputElement.textContent = "The result is: " + result.parameter1 + ",  " + result.parameter2;
+        }
+    </script> 
+</body>
+</html>
+
+<!-- //Object Constructor
+//2 parameters
+//return an object containing all of arguements
+//Bonus: make another function which adds the object to the end of an array -->
+

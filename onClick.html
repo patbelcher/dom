@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="changeHeadingContent">Main Heading</h1>
+    
+    <h2 id="h2_1">Subheading 1</h2>
+    <p id="p_1">Hey this is a paragraph</p>
+
+    <h2 id="h2_2">Subheading 2</h2>
+    <p id="p_2">Hey this is a paragraph</p>
+
+
+    <h2 id="h2_3">Subheading 3</h2>
+    <p id="p_3">Hey this is a paragraph</p>
+
+
+
+<button onClick="changeHeadingContent()">Change Heading</button>
+<button onclick="changeH2Content()">Change H2 Subheading Content</button>
+<button onClick="changePContent()">Change Paragraph</button>
+<button onClick="addDivContent()">Add Content to Div</button>
+<button onClick="removeHeadings()">Remove headings</button>
+<button onclick="removeParagraphs()">Remove paragraphs</button>
+<button onClick="removeDivContent()"></button>Remove Div Content</div></button>
+   <hr />
+   
+    <h1>Change Title Example</h1>
+    
+    <button onclick="changeTitle()">Change Title</button>
+
+    <script>
+        function changeTitle() {
+            document.title = "LOOK - NEW TITLE";
+        }
+
+        function changeHeadingContent() {
+            const newHeadingContent = document.getElementById("changeHeadingContent");
+            newHeadingContent.textContent = "Changing the heading";
+                
+            }
+
+        function changeH2Content() {
+            const newContent = "New Subheading H2 content";
+            
+            const h2Elements = document.querySelectorAll("h2");
+                h2Elements.forEach(function(element) {
+                    element.textContent = newContent;
+            });
+        }
+        function changePContent() {
+            const newContent = "New P Paragraph content";
+            
+            const pElements = document.querySelectorAll("p");
+                pElements.forEach(function(element) {
+                    element.textContent = newContent;
+            });
+        }
+
+        function addDivContent {
+
+
+        }
+
+        function removeHeadings() {
+            const h1Element = document.querySelector("h1");
+            const h2Elements = document.querySelectorAll("h2");
+
+            h1Element.remove();
+            h2Elements.forEach(function(element) {
+                element.remove();
+            });
+        }
+
+        function removeParagraphs() {
+            const pElements = document.querySelectorAll("p");
+
+            pElements.forEach(function(element) {
+                element.remove();
+            });
+        }
+
+        function removeDivContent {
+
+
+        }
+    </script>
+
+    
+</body>
+</html>
